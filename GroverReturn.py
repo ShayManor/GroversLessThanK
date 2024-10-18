@@ -7,7 +7,7 @@ class GroverReturn:
         self.indices = indices
 
     def to_dict(self):
-        return {'counts': self.counts, 'indices': self.indices}
+        return {'Counts': self.counts, 'Indices': self.indices}
 
     def __str__(self):
         return str(self.to_dict())

@@ -76,10 +76,6 @@ class grover_less_than_k:
 
         # Estimate number of Grover iterations
         N = 2 ** n
-        # M = len([a for a in int_list if a < K])
-        # if M == 0:
-        #     print("No elements less than k.")
-        #     return qc
 
         num_iterations = int(round((pi / 4) * sqrt(N)))
 
