@@ -119,8 +119,7 @@ class grover_less_than_k:
         backend = Aer.get_backend('qasm_simulator')
         transpiled_qc = transpile(qc, backend)
         result = backend.run(transpiled_qc).result()
-        # print(k)
-        # print(int_list)
+
         try:
             cs = result.get_counts()
         except:
